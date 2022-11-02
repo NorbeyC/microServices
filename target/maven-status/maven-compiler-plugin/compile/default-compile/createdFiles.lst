@@ -1,0 +1,4 @@
+edu\escuelaing\arep\microservices\MicroServices.class
+edu\escuelaing\arep\microservices\connectMongo.class
+edu\escuelaing\arep\microservices\posts.class
+edu\escuelaing\arep\microservices\hilo.class

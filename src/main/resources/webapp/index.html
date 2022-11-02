@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        <div style="width: 40%; margin: auto; align-items: center; background-color: skyblue; border: 8px">
+            <!--<h1>Form with GET</h1>
+            <form action="/stream">
+                <label for="Post">Post:</label><br>
+                <input type="text" id="post" name="post" value="post"><br><br>
+                <input type="button" value="Submit" onclick="loadGetMsg()">
+            </form> 
+            <div id="getrespmsg"></div>
+
+            <script>
+                function loadGetMsg() {
+                    let nameVar = document.getElementById("post").value;
+                    const xhttp = new XMLHttpRequest();
+                    xhttp.onload = function() {
+                        document.getElementById("getrespmsg").innerHTML =
+                        this.responseText;
+                    }
+                    xhttp.open("GET", "/stream");
+                    xhttp.send();
+                }
+            </script>-->
+            <div style="width: 50%; margin: auto; align-items: center;  ">
+                <br>
+            <img src="img/2021 Twitter logo - black.png" style="width: 80px; margin: 33%">
+            <h1>Login</h1>
+            <form action="/login">
+                <label for="postname">Name:</label><br>
+                <input type="text" id="name" name="post" value="new post" style="height: 50px"><br><br>
+                <label for="postname">Password:</label><br>
+                <input type="text" id="postname" name="post" value="new post" style="height: 50px"><br><br>
+                <input type="button" value="Post" onclick="loadPostMsg(postname)" href="post.html">
+            </form>
+            <br><br>
+            <div id="postrespmsg" style="width: 450px; height: 500px;border-width: 3px; border-color: blue">
+                <script>
+                    function loadPostMsg(name){
+                        let url = "/login?name=" + postname.value;
+
+                        fetch (url, {method: 'POST'})
+                            .then(x => x.text())
+                            .then(y => document.getElementById("postrespmsg").innerHTML = y);
+                    }
+                </script>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
